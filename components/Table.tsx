@@ -27,7 +27,7 @@ import { ThemeContext } from '@/context/ThemeContext'
 async function getData() {
   // Fetch data from the appropriate API route.
   try {
-    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+    const baseUrl = "https://ts-rehab-backend.vercel.app/" || "http://localhost:4200";  
     const res = await axios.get(`${baseUrl}/user`);
     return res.data;
   } catch (error) {
@@ -74,7 +74,7 @@ const handleClick = (index: any) => {
 const handleNewDataSubmit = async (e:React.FormEvent,userID:String) =>{
   e.preventDefault();
   let name = currentuser.name;
-  const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+  const baseUrl = "https://ts-rehab-backend.vercel.app/" || "http://localhost:4200"; 
   await axios.post(`${baseUrl}/user/tasks`,{name,Post})
   setPost({title:"",description:""});
   window.location.reload();

@@ -27,7 +27,7 @@ import { ThemeContext } from '@/context/ThemeContext'
 async function getData() {
   // Fetch data from the appropriate API route.
   try {
-    const baseUrl = "https://ts-rehab-backend.vercel.app/" || "http://localhost:4200";  
+    const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200";  
     const res = await axios.get(`${baseUrl}/user`);
     return res.data;
   } catch (error) {
@@ -74,7 +74,7 @@ const handleClick = (index: any) => {
 const handleNewDataSubmit = async (e:React.FormEvent,userID:String) =>{
   e.preventDefault();
   let name = currentuser.name;
-  const baseUrl = "https://ts-rehab-backend.vercel.app/" || "http://localhost:4200"; 
+  const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200";  
   await axios.post(`${baseUrl}/user/tasks`,{name,Post})
   setPost({title:"",description:""});
   window.location.reload();
@@ -83,7 +83,7 @@ const handleNewDataSubmit = async (e:React.FormEvent,userID:String) =>{
 const handleUpdateData = async (id:any,title:String,description:String)=>{
     try 
     {
-      const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+      const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200"; 
       const res =  await axios.put(`${baseUrl}/user`,{id,title,description})    
       const data = await res.data;
       setPost({ title: data.title, description: data.description });
@@ -98,7 +98,7 @@ const handleUpdateData = async (id:any,title:String,description:String)=>{
 
 const deleteData = async (userID:String,postID:String) => {
   try {
-    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+    const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200";  
     await axios.delete(`${baseUrl}/user/tasks`,{data:{userID,postID}})
   } catch (error) {
     console.error(error);
@@ -108,7 +108,7 @@ const deleteData = async (userID:String,postID:String) => {
 
 const deleteUser = async (userID:any)=>{
   try {
-    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+    const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200";  
     await axios.delete(`${baseUrl}/user`,{data:{userID}})
   } catch (error) {
     console.error(error);
@@ -118,7 +118,7 @@ const deleteUser = async (userID:any)=>{
 
 const handleNewUser = async (name:String,email:String) => {
   try {
-    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4200" : ""; 
+    const baseUrl = "https://ts-rehab-api.onrender.com/" || "http://localhost:4200"; 
     await axios.post(`${baseUrl}/user`,{name,email})
   } catch (error) {
     console.error(error);

@@ -175,7 +175,6 @@ const handleNewUser = async (name:String,email:String) => {
           <Tabs defaultValue="task" className={`bg-inherit text-inherit   flex flex-col gap-4`}>
             <TabsList className='bg-inherit text-inherit border-[1px] border-slate-400 w-max'>
               <TabsTrigger value='task'>Tasks</TabsTrigger>
-              <TabsTrigger value='graphs'>Graph</TabsTrigger>
             </TabsList>
             <TabsContent value='task'>
               <Tasks
@@ -186,9 +185,7 @@ const handleNewUser = async (name:String,email:String) => {
               deleteData={deleteData}
               handleNewDataSubmit={handleNewDataSubmit}/>
             </TabsContent>
-            <TabsContent value='graphs'>
-              <h1>Graph...?</h1>
-            </TabsContent>
+            
           </Tabs>
         </div>
 

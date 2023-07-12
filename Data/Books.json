@@ -1,0 +1,62 @@
+[
+  {
+    "id":1,
+    "title":"UNDER THE INFLUENCE: The Literature of addiction",
+    "image":"/book_covers/book1.jpg",
+    "url":"https://archive.org/details/underinfluenceli0000unse/mode/2up"
+  },
+  {
+    "id":2,
+    "title":"Drugs, Addiction and Initiation",
+    "image":"/book_covers/book2.jpg",
+    "url":"https://archive.org/details/drugsaddictionin0000zoja"
+  },
+  {
+    "id":3,
+    "title":"Drugs, Addiction and the Brain",
+    "image":"/book_covers/book3.gif",
+    "url":"https://archive.org/details/drugsaddictionbr0000koob"
+  },
+  {
+    "id":4,
+    "url":"https://archive.org/details/consequencesofad0000newc/page/n5/mode/2up",
+    "image":"/book_covers/book4.jpg",
+    "title":"Consequences of adolescent drug use"
+  },
+  {
+    "id":5,
+    "url":"https://archive.org/details/drugabuse0000haug",
+    "image":"/book_covers/book5.jpg",
+    "title":"Drug abuse?"
+  },
+  {
+    "id":6,
+    "url":"https://archive.org/details/alcoholdrugabuse0000powe_d3n1",
+    "image":"/book_covers/book6.jpg",
+    "title":"Alcohol and drug abuse"
+  },
+  {
+    "id":7,
+    "url":"https://archive.org/details/drugabuse0000wash",
+    "image":"/book_covers/book7.jpg",
+    "title":"Drug Abuse"
+  },
+  {
+    "id":8,
+    "url":"https://archive.org/details/drugalcoholabuse0000unse_j2e8",
+    "image":"/book_covers/book8.jpg",
+    "title":"Drug and Alcohol Abuse"
+  },
+  {
+    "id":9,
+    "url":"https://archive.org/details/niceornastylearn0000llew",
+    "image":"/book_covers/book9.jpg",
+    "title":"Nice or nasty? "
+  },
+  {
+    "id":10,
+    "url":"https://archive.org/details/whensomeoneyoulo0000cris",
+    "image":"/book_covers/book10.jpg",
+    "title":"When someone you love abuses alcohol or drugs "
+  }
+]

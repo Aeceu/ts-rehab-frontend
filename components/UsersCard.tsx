@@ -23,7 +23,7 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
-import { FaTrash } from 'react-icons/fa'
+import { FaTrash, FaUserAltSlash } from 'react-icons/fa'
 import { Label } from '@/components/ui/label'
 import { ThemeContext } from '@/context/ThemeContext';
 
@@ -71,8 +71,8 @@ export const UsersCard: React.FC<UsersCardProps> = ({
           <h1 className='text-1xl font-bold '>{data.name}</h1>
           <h1 className='text-[.8em] text-gray-500'>{data.email}</h1>
           </div>
-          <div onClick={()=>deleteUser(data._id)} className={`bg-inherit p-4 ${color === 'black' ? "hover:border-black hover:border-[1px] hover:border-opacity-10" : "hover:border-white hover:border-[1px] hover:border-opacity-50"} rounded-full cursor-pointer`}>
-          <FaTrash />
+          <div onClick={()=>deleteUser(data._id)} className={`text-2xl bg-inherit p-4 ${color === 'black' ? "hover:border-black hover:border-[1px] hover:border-opacity-10" : "hover:border-white hover:border-[1px] hover:border-opacity-50"} rounded-full cursor-pointer`}>
+          <FaUserAltSlash className={`${color === 'black' ? "text-slate-800": "text-white"}`} />
           </div>
         </div>
       ))}

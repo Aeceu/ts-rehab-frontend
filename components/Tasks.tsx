@@ -23,6 +23,7 @@ import {
 import { Separator } from "./ui/separator";
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
 interface TasksProps {
   currentuser: {
@@ -92,7 +93,10 @@ const Tasks: React.FC<TasksProps> = ({
                 <TableCell className='flex gap-8 h-full w-full items-center'>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button>Edit</Button>
+                      <div 
+                      className={`text-2xl  p-4 ${color === 'black' ? "hover:border-black hover:border-[1px] hover:border-opacity-10" : "hover:border-white hover:border-[1px] hover:border-opacity-50"} rounded-full cursor-pointer`}>
+                        <FaEdit className={`${color === 'black' ? "text-slate-800": "text-white"}`}/>
+                      </div>
                     </DialogTrigger>
                     <DialogContent className='w-full lg:w-1/3 text-inherit bg-inherit border-[1px] border-slate-300 shadow-md bg-slate-800 text-2xl font-semibold text-white'>
                       <DialogHeader>
@@ -110,7 +114,12 @@ const Tasks: React.FC<TasksProps> = ({
                       <Button onClick={() => handleUpdateData(post._id, Post.title, Post.description)}>Update</Button>
                     </DialogContent>
                   </Dialog>
-                  <Button onClick={() => deleteData(currentuser._id, post._id)}>Delete</Button>
+                  <div 
+                  className={`text-2xl bg-inherit p-4 ${color === 'black' ? "hover:border-black hover:border-[1px] hover:border-opacity-10" : "hover:border-white hover:border-[1px] hover:border-opacity-50"} rounded-full cursor-pointer`}
+                  onClick={() => deleteData(currentuser._id, post._id)}>
+                    <FaTrash className={`${color === 'black' ? "text-slate-800": "text-white"}`}/>
+                  </div>
+                  {/* <Button onClick={() => deleteData(currentuser._id, post._id)}>Delete</Button> */}
                 </TableCell>
               </TableRow>
             );

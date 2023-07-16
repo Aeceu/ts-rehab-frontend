@@ -40,7 +40,7 @@ const Complete: React.FC<TasksProps> = ({
   const deleteTodos = async (todosID: string) => {
     try {
       await axios.request({
-        url: "http://localhost:4200/complete",
+        url: "https://ts-rehab-api.onrender.com/complete"||"http://localhost:4200/complete",
         method: 'DELETE',
         data: { userID: id, postID: todosID }
       });

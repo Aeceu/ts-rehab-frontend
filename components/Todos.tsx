@@ -42,7 +42,7 @@ const Todos: React.FC<TasksProps> = ({ todos }) => {
   
   const addNewTodos = async () => {
     try {
-      const res = await axios.post("http://localhost:4200/todos", { id: id, Todos });
+      const res = await axios.post("https://ts-rehab-api.onrender.com/todos"||"http://localhost:4200/todos", { id: id, Todos });
       console.log(res.data);
 
       window.location.reload();
@@ -53,7 +53,7 @@ const Todos: React.FC<TasksProps> = ({ todos }) => {
 
   const editTodos = async (todosID:String) => {
     try {
-      const res = await axios.put("http://localhost:4200/todos", { id: todosID, Todos });
+      const res = await axios.put("https://ts-rehab-api.onrender.com/todos"||"http://localhost:4200/todos", { id: todosID, Todos });
       console.log(res.data);
 
       window.location.reload();
@@ -65,7 +65,7 @@ const Todos: React.FC<TasksProps> = ({ todos }) => {
   const deleteTodos = async (todosID: string) => {
     try {
       await axios.request({
-        url: "http://localhost:4200/todos",
+        url: "https://ts-rehab-api.onrender.com/todos"||"http://localhost:4200/todos",
         method: 'DELETE',
         data: { userID: id, postID: todosID }
       });

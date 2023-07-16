@@ -16,7 +16,8 @@ const SignUp = () => {
   const onSubmit = async (e:any) =>{
     e.preventDefault();
     try {
-      await axios.post('https://ts-rehab-api.onrender.com/'|| 'http://localhost:4200/user/register',{email,password})
+      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+      await axios.post(`${baseUrl}/user/regiser`,{email,password})
       alert("Registered Complete!")
       router.replace('/dashboard');
     } catch (error) {

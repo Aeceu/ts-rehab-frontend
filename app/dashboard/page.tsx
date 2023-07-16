@@ -42,7 +42,9 @@ const Dashboard: React.FC = () => {
         if (id === null) {
           return;
         }
-        const res = await axios.get(`https://ts-rehab-api.onrender.com/${id}`||`http://localhost:4200/user/${id}`);
+        const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+        const res = await axios.get(`${baseUrl}/user/${id}`);
+        // const res = await axios.get(`https://ts-rehab-api.onrender.com/${id}`||`http://localhost:4200/user/${id}`);
         setUserData(res.data);
       } catch (error) {
         console.error(error);

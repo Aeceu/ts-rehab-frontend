@@ -91,7 +91,8 @@ const TableTask: React.FC<TabelTaskProps> = ({pending,completed,todos }) => {
 
   const handlePostTasks = async () => {
     try {
-      const res = await axios.post('https://ts-rehab-api.onrender.com/uncomplete'||"http://localhost:4200/uncomplete",{id,randomTasks})
+      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+      const res = await axios.post(`${baseUrl}/uncomplete`,{id,randomTasks})
       window.location.reload();
     } catch (error) {
       console.error(error);

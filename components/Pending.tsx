@@ -42,7 +42,8 @@ const Pending: React.FC<TasksProps> = ({
 
   const handleTaskComplete = async (postID:String) =>{
     try {
-      const res = await axios.post("https://ts-rehab-api.onrender.com/complete"||"http://localhost:4200/complete",{userID:id,postID:postID})
+      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+      const res = await axios.post(`${baseUrl}/complete`,{userID:id,postID:postID})
       console.log(res.data);
       window.location.reload();
     } catch (error) {

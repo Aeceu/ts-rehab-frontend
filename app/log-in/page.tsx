@@ -19,7 +19,8 @@ const Login = () => {
   const onSubmit = async (e:any) =>{
     e.preventDefault();
     try {
-      const res = await axios.post(`https://ts-rehab-api.onrender.com/user/login`||'http://localhost:4200/user/login',{email,password})
+      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+      const res = await axios.post(`${baseUrl}/user/login`,{email,password})
       setCookies('access_token',res.data.token);
       window.localStorage.setItem("userID",res.data.userID);
       router.replace("/dashboard");

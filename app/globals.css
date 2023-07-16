@@ -92,12 +92,12 @@
 
 .light {
   background-color: #efefef;
-  color: #111;
+  color: #121212;
 }
 
 .dark {
-  background-color: #111;
-  color: white;
+  background-color: #121212;
+  color: #e8eaf7;
 }
 
 a {

@@ -1,0 +1,382 @@
+[
+  {
+    "category": "Mental Well-being",
+    "activities": [
+      {
+        "frequency": "Daily",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Read recovery literature or self-help books",
+            "description": "Spend time reading books that provide insights and guidance on recovery and self-improvement."
+          },
+          {
+            "id":2,
+            "title": "Practice mindfulness meditation",
+            "description": "Engage in mindfulness meditation to cultivate present-moment awareness and reduce stress."
+          },
+          {
+            "id":3,
+            "title": "Journal about thoughts and emotions",
+            "description": "Write down your thoughts, emotions, and reflections to gain clarity and self-awareness."
+          },
+          {
+            "id":4,
+            "title": "Engage in brain-stimulating puzzles or games",
+            "description": "Challenge your cognitive abilities by solving puzzles, crosswords, or playing brain games."
+          },
+          {
+            "id":5,
+            "title": "Listen to educational podcasts or audiobooks",
+            "description": "Expand your knowledge and perspectives by listening to educational podcasts or audiobooks."
+          }
+        ]
+      },
+      {
+        "frequency": "Weekly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Attend educational workshops or classes on personal growth",
+            "description": "Participate in workshops or classes that focus on personal growth and self-improvement."
+          },
+          {
+            "id":2,
+            "title": "Set and review personal goals for the week",
+            "description": "Set specific, achievable goals for the week and regularly review your progress."
+          },
+          {
+            "id":3,
+            "title": "Explore new hobbies or creative outlets",
+            "description": "Discover new hobbies or engage in creative activities that bring you joy and fulfillment."
+          },
+          {
+            "id":4,
+            "title": "Engage in deep conversations with peers or mentors",
+            "description": "Have meaningful conversations with supportive peers or mentors to gain insights and support."
+          },
+          {
+            "id":5,
+            "title": "Take part in book or film discussions related to recovery",
+            "description": "Join discussions or book clubs focused on recovery-related books or films to enhance understanding."
+          }
+        ]
+      },
+      {
+        "frequency": "Monthly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Attend a recovery-focused workshop or retreat",
+            "description": "Immerse yourself in a recovery-focused workshop or retreat to deepen your understanding and progress."
+          },
+          {
+            "id":2,
+            "title": "Engage in a self-care or spa day",
+            "description": "Dedicate a day to self-care, relaxation, and rejuvenation to nurture your well-being."
+          },
+          {
+            "id":3,
+            "title": "Reflect on personal growth and progress in recovery",
+            "description": "Take time to reflect on your personal growth and progress in your recovery journey."
+          },
+          {
+            "id":4,
+            "title": "Explore new genres or authors in reading",
+            "description": "Step out of your comfort zone and explore new genres or authors in your reading choices."
+          },
+          {
+            "id":5,
+            "title": "Set long-term goals and create a plan for achieving them",
+            "description": "Define long-term goals in your recovery journey and develop a plan to accomplish them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Psychological Well-being",
+    "activities": [
+      {
+        "frequency": "Daily",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Attend individual counseling sessions",
+            "description": "Regularly attend individual counseling sessions to address and work through psychological challenges."
+          },
+          {
+            "id":2,
+            "title": "Practice deep breathing or relaxation exercises",
+            "description": "Incorporate deep breathing or relaxation exercises to manage stress and promote emotional well-being."
+          },
+          {
+            "id":3,
+            "title": "Reflect on emotions through journaling or expressive writing",
+            "description": "Use journaling or expressive writing as a tool to explore and process your emotions."
+          },
+          {
+            "id":4,
+            "title": "Identify and challenge negative thought patterns",
+            "description": "Recognize negative thought patterns and actively challenge and reframe them into positive ones."
+          },
+          {
+            "id":5,
+            "title": "Engage in positive affirmations or self-talk",
+            "description": "Practice positive affirmations or self-talk to cultivate a positive mindset and boost self-confidence."
+          }
+        ]
+      },
+      {
+        "frequency": "Weekly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Attend group therapy or psychotherapy sessions",
+            "description": "Participate in group therapy or psychotherapy sessions to gain support and insight from peers and professionals."
+          },
+          {
+            "id":2,
+            "title": "Participate in cognitive-behavioral therapy exercises",
+            "description": "Engage in cognitive-behavioral therapy exercises to identify and modify unhelpful thoughts and behaviors."
+          },
+          {
+            "id":3,
+            "title": "Practice relaxation techniques like guided imagery",
+            "description": "Utilize relaxation techniques such as guided imagery to promote relaxation and reduce stress."
+          },
+          {
+            "id":4,
+            "title": "Engage in art therapy sessions or creative expression",
+            "description": "Express yourself creatively through art therapy sessions or engaging in artistic activities."
+          },
+          {
+            "id":5,
+            "title": "Explore dream analysis or other forms of self-discovery",
+            "description": "Explore dream analysis or other self-discovery methods to gain insights into your subconscious mind."
+          }
+        ]
+      },
+      {
+        "frequency": "Monthly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Reflect on therapy progress and personal insights",
+            "description": "Reflect on the progress and personal insights gained through therapy sessions or self-reflection."
+          },
+          {
+            "id":2,
+            "title": "Explore new therapeutic modalities or approaches",
+            "description": "Explore new therapeutic modalities or approaches to enhance your psychological well-being."
+          },
+          {
+            "id":3,
+            "title": "Practice gratitude by writing gratitude letters or creating a gratitude jar",
+            "description": "Cultivate gratitude by writing gratitude letters or keeping a gratitude jar to appreciate the positive aspects of life."
+          },
+          {
+            "id":4,
+            "title": "Engage in self-reflection and introspection",
+            "description": "Set aside time for self-reflection and introspection to gain deeper self-awareness and insight."
+          },
+          {
+            "id":5,
+            "title": "Explore the benefits of aromatherapy or essential oils",
+            "description": "Experience the benefits of aromatherapy or essential oils to promote relaxation and emotional well-being."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Social Well-being",
+    "activities": [
+      {
+        "frequency": "Daily",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Participate in group therapy or support group sessions",
+            "description": "Engage in group therapy or support group sessions to connect with others and receive support."
+          },
+          {
+            "id":2,
+            "title": "Connect with a trusted friend or family member",
+            "description": "Reach out and connect with a trusted friend or family member for social support and companionship."
+          },
+          {
+            "id":3,
+            "title": "Engage in acts of kindness or community service",
+            "description": "Perform acts of kindness or engage in community service to contribute to the well-being of others."
+          },
+          {
+            "id":4,
+            "title": "Practice active listening and effective communication",
+            "description": "Develop active listening skills and practice effective communication to enhance social interactions."
+          },
+          {
+            "id":5,
+            "title": "Engage in physical activity or team sports",
+            "description": "Participate in physical activities or team sports to foster social connections and promote physical well-being."
+          }
+        ]
+      },
+      {
+        "frequency": "Weekly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Attend group outings or recreational activities with peers",
+            "description": "Take part in group outings or recreational activities with peers to build social connections and have fun."
+          },
+          {
+            "id":2,
+            "title": "Engage in volunteer work or community service projects",
+            "description": "Volunteer for community service projects to contribute to the community and meet like-minded individuals."
+          },
+          {
+            "id":3,
+            "title": "Join social or hobby clubs related to interests",
+            "description": "Join social or hobby clubs that align with your interests to meet people with similar passions."
+          },
+          {
+            "id":4,
+            "title": "Attend cultural events, such as concerts or art exhibitions",
+            "description": "Attend cultural events like concerts or art exhibitions to experience diverse perspectives and connect with others."
+          },
+          {
+            "id":5,
+            "title": "Plan and participate in team-building activities",
+            "description": "Engage in team-building activities to strengthen relationships and promote collaboration."
+          }
+        ]
+      },
+      {
+        "frequency": "Monthly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Plan and organize a social event or gathering",
+            "description": "Take the initiative to plan and organize a social event or gathering with friends or peers."
+          },
+          {
+            "id":2,
+            "title": "Attend community-based events or volunteer in community projects",
+            "description": "Get involved in community-based events or volunteer opportunities to connect with your community."
+          },
+          {
+            "id":3,
+            "title": "Engage in networking activities or professional development",
+            "description": "Participate in networking activities or engage in professional development opportunities to expand your social and professional network."
+          },
+          {
+            "id":4,
+            "title": "Foster relationships by reaching out to old friends or making new ones",
+            "description": "Reconnect with old friends or make an effort to establish new friendships to nurture social connections."
+          },
+          {
+            "id":5,
+            "title": "Reflect on the importance of social connections in recovery",
+            "description": "Take time to reflect on the significance of social connections in your recovery journey and express gratitude for meaningful relationships."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Physical Well-being",
+    "activities": [
+      {
+        "frequency": "Daily",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Engage in aerobic exercise, such as jogging or cycling",
+            "description": "Incorporate aerobic exercises like jogging or cycling into your daily routine to improve cardiovascular health."
+          },
+          {
+            "id":2,
+            "title": "Follow a balanced and nutritious meal plan",
+            "description": "Adopt a balanced and nutritious meal plan that includes a variety of whole foods to fuel your body."
+          },
+          {
+            "id":3,
+            "title": "Practice yoga or stretching exercises",
+            "description": "Include yoga or stretching exercises in your daily routine to improve flexibility and promote relaxation."
+          },
+          {
+            "id":4,
+            "title": "Stay hydrated by drinking enough water",
+            "description": "Ensure you stay properly hydrated throughout the day by drinking an adequate amount of water."
+          },
+          {
+            "id":5,
+            "title": "Get sufficient sleep and prioritize restful nights",
+            "description": "Establish a consistent sleep schedule and prioritize getting enough restful sleep each night."
+          }
+        ]
+      },
+      {
+        "frequency": "Weekly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Take part in group exercise classes or fitness sessions",
+            "description": "Join group exercise classes or fitness sessions to enhance motivation and accountability in your fitness routine."
+          },
+          {
+            "id":2,
+            "title": "Try out new physical activities or sports",
+            "description": "Explore new physical activities or sports to keep your fitness routine enjoyable and diverse."
+          },
+          {
+            "id":3,
+            "title": "Practice relaxation exercises like progressive muscle relaxation",
+            "description": "Incorporate relaxation exercises like progressive muscle relaxation to reduce tension and promote relaxation."
+          },
+          {
+            "id":4,
+            "title": "Attend nutrition workshops or cooking classes",
+            "description": "Attend nutrition workshops or cooking classes to learn about healthy eating habits and meal preparation."
+          },
+          {
+            "id":5,
+            "title": "Engage in outdoor activities or hikes in nature",
+            "description": "Spend time outdoors and engage in activities like hiking to reap the benefits of nature and physical activity."
+          }
+        ]
+      },
+      {
+        "frequency": "Monthly",
+        "tasks": [
+          {
+            "id":1,
+            "title": "Schedule a comprehensive health check-up or physical examination",
+            "description": "Schedule regular health check-ups or physical examinations to monitor your overall health and well-being."
+          },
+          {
+            "id":2,
+            "title": "Explore different types of exercise or fitness classes",
+            "description": "Try out different types of exercise or fitness classes to discover new ways to stay active and fit."
+          },
+          {
+            "id":3,
+            "title": "Plan and prepare a variety of healthy recipes",
+            "description": "Plan and prepare a diverse range of healthy recipes to maintain a balanced and nutritious diet."
+          },
+          {
+            "id":4,
+            "title": "Engage in a new outdoor activity or adventure",
+            "description": "Challenge yourself with a new outdoor activity or adventure to keep your physical well-being exciting and engaging."
+          },
+          {
+            "id":5,
+            "title": "Reflect on the importance of physical well-being in recovery",
+            "description": "Take time to reflect on the significance of physical well-being in your recovery journey and celebrate your progress."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -25,13 +25,14 @@ function page() {
                   />
                   </div>
                   <div className="h-1/4 w-full flex flex-col justify-center items-center text-center p-2 text-[.9rem]  border-x-[1px] border-b-[1px] border-[#242424] rounded-b-lg gap-2">
-                  <h1 className="">{book.title}</h1>
-                  <a 
-                  rel="noopener noreferrer" 
-                  target="_blank"
-                  href={book.url}
-                  className="border-[1px] border-[#242424] rounded-xl px-2 py-1"
-                  >read book</a>
+                    <h1 className="">{book.title}</h1>
+                    <a 
+                    rel="noopener noreferrer" 
+                    target="_blank"
+                    href={book.url}
+                    className="border-[1px] border-[#242424] rounded-xl px-2 py-1">
+                      read book
+                    </a>
                   </div>
                 </div>
               )

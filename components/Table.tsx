@@ -120,7 +120,7 @@ const TableTask: React.FC<TabelTaskProps> = ({pending,completed,todos }) => {
             </Tabs>
             <Button onClick={handlePostTasks}>Display Tasks</Button>
             </div>
-            <Tabs defaultValue="todos" className={`lg:w-full xl:w-1/2 bg-inherit text-inherit   flex flex-col gap-4`}>
+            <Tabs defaultValue="todos" className={`w-full xl:w-1/2 bg-inherit text-inherit   flex flex-col gap-4`}>
             <TabsList className='bg-inherit text-inherit border-[1px] border-slate-400 w-max gap-2'>
               <TabsTrigger value='todos' className={`${color === 'black'? "data-[state=active]:bg-black data-[state=active]:text-white":"data-[state=active]:bg-background data-[state=active]:text-foreground"}`}>Todos</TabsTrigger>
             </TabsList>

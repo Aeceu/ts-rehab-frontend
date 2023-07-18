@@ -4,9 +4,10 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { useGetUserID } from '@/hooks/useGetUserID';
 import axios from 'axios';
-import Leaf from '../../public/leaf.png';
-import Image from 'next/image';
+
+
 function PDF() {
+  const [WholeData,setWholeData] = useState();
   const [userData,setUserData] = useState();
   const [loader, setLoader] = useState(false);
   const id = useGetUserID();
@@ -28,6 +29,23 @@ function PDF() {
     fetchData();
   }, [id]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        if (id === null) {
+          return;
+        }
+        const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
+        const res = await axios.get(`${baseUrl}/user`);
+        setWholeData(res.data);
+        // console.log(res.data.email);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
+
   const downloadPDF = () =>{
     const capture = document.querySelector('.receipt');
     setLoader(true);
@@ -41,6 +59,26 @@ function PDF() {
       doc.save('receipt.pdf');
     })
   }
+
+  const convertToTxt = () => {
+    const userDataTxt = WholeData.map((user) => {
+      return `Username: ${user.email}\n\nTODOS:\n${user.Todos
+        .map((item) => `- Title: ${item.title}, Description: ${item.description}, Time: ${createdDate(item.createdAt)}`)
+        .join('\n')}\n\nPending Tasks:\n${user.uncomplete_task
+        .map((item) => `- Title: ${item.title}, Description: ${item.description}, Time: ${createdDate(item.createdAt)}`)
+        .join('\n')}\n\nCompleted Tasks:\n${user.complete_task
+        .map((item) => `- Title: ${item.title}, Description: ${item.description}, Time: ${createdDate(item.createdAt)}`)
+        .join('\n')}\n`;
+    });
+
+    const txtData = userDataTxt.join('\n\n');
+    const element = document.createElement('a');
+    const file = new Blob([txtData], { type: 'text/plain' });
+    element.href = URL.createObjectURL(file);
+    element.download = 'whole-database.txt';
+    document.body.appendChild(element); // Required for this to work in FireFox
+    element.click();
+  };
 
   const createdDate = (date) =>{
     let time = date.split("T")[0];
@@ -62,6 +100,27 @@ function PDF() {
                 )}
 
               </button> 
+            </div>
+            <div className='w-full flex item-center justify-center p-2'>
+            {
+              userData?.email  === 'admin' ?
+              (
+                <button
+                className=" bg-slate-900 text-white font-bold px-4 py-2 border-2 border-white rounded-md"
+                onClick={convertToTxt}
+                disabled={!(loader===false)}
+              >
+                {loader?(
+                  <span>Downloading</span>
+                ):(
+                  <span>Download Whole Data in Text</span>
+                )}
+
+                </button> 
+              ):(
+                null
+              ) 
+            }
             </div>
         </div>
         <div className="receipt text-black bg-white w-full h-auto flex justify-center items-center overflow-x-hidden p-32">

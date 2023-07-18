@@ -15,18 +15,16 @@ import {
   TabsList,
   TabsContent 
 } from '@/components/ui/tabs'
-
 import Image from 'next/image';
+import Link from "next/link";
+import axios from 'axios';
+import TableTask from '@/components/Table';
 import { cn } from '@/lib/utils';
 import { useCookies } from 'react-cookie';
 import React, { useContext } from 'react';
 import { ThemeContext } from "@/context/ThemeContext";
-import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { useGetUserID } from '@/hooks/useGetUserID';
-import axios from 'axios';
-import TableTask from '@/components/Table';
-
 
 const Dashboard: React.FC = () => {
   const [userData, setUserData] = useState<any>(null);
@@ -63,7 +61,9 @@ const Dashboard: React.FC = () => {
     setIsClient(true);
   }, []);
 
-  
+
+
+
 
   return (
     <div className="w-full  max-w-[1600px] justify-start flex flex-col gap-8 p-4">
@@ -97,6 +97,11 @@ const Dashboard: React.FC = () => {
             </div>
           ) : (
             <div className="flex gap-4 items-center">
+              <div>
+                <Link href="/PDF_COM" className={` bg-green-600 font-semibold p-2 rounded-md`}>
+                Receipt
+                </Link>
+              </div>
               <h1 className={`text-[.8rem] ${color === 'black' ? 'text-black' : 'text-gray-300'}`}>{userData?.email}</h1>
               <DropdownMenu>
                 <DropdownMenuTrigger className={` text-2xl rounded-full border-2 border-slate-500 p-2 `}>

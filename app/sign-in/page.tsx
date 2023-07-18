@@ -13,17 +13,21 @@ const SignUp = () => {
   const {mode} = useContext(ThemeContext)
   const color = mode === 'light' ? 'border-black' : 'border-white';
 
-  const onSubmit = async (e:any) =>{
+  const onSubmit = async (e: any) => {
     e.preventDefault();
+    console.log(email, password);
+  
     try {
-      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";  
-      await axios.post(`${baseUrl}/user/regiser`,{email,password})
-      alert("Registered Complete!")
+      const baseUrl = "https://ts-rehab-api.onrender.com" || "http://localhost:4200";
+      const res = await axios.post(`${baseUrl}/user/register`, { email, password });
+      console.log(res);
+      alert("Registered Complete!");
       router.replace('/dashboard');
     } catch (error) {
       console.error(error);
     }
-  }
+  };
+  
 
   
 
@@ -39,7 +43,7 @@ const SignUp = () => {
           <label htmlFor="password" className='text-[.9rem]'>Password:</label>
           <input type="password" placeholder='password' className='rounded-md px-4 py-2 outline-none text-black' value={password} onChange={(e)=>setPassword(e.target.value)} />
         </div>
-        <Button onSubmit={()=>onSubmit} type='submit' variant="outline" 
+        <Button  type='submit' variant="outline" 
           className={`font-semibold text-inherit border-[1px] ${color} border-opacity-50 ${color === 'border-black' ? 'hover:bg-black hover:text-white hover:border-white':""}`}>Submit</Button>
       </form>
     </div>

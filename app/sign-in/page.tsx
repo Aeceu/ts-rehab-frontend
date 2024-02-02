@@ -9,7 +9,9 @@ import axios from 'axios'
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const router = useRouter();
+  
   const {mode} = useContext(ThemeContext)
   const color = mode === 'light' ? 'border-black' : 'border-white';
 

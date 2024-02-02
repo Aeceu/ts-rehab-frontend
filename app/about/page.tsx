@@ -15,7 +15,7 @@ const about = () => {
           alt="image"
           fill={true}
           className="object-cover object-center"
-        loading="lazy"
+          loading="lazy"
         />
         <div className="absolute bg-[#53c28b] p-3 text-[#efefef]  md:bottom-5 md:left-5 bottom-5 left-0 md:w-auto w-full ">
           <h1 className="md:text-2xl text-1xl font-semibold">
@@ -28,12 +28,7 @@ const about = () => {
         <Reveal className="flex-1 flex flex-col gap-[30px]">
           <h1 className="text-2xl font-semibold text-[#ff6347]">Who are we?</h1>
           <Reveal className="text-justify font-semibold">
-            We are group 7, Composed of Fernando Jose Acebuche, Steven Glen
-            Dalaygon, Renzybert Rotaquio, Justphine De Vera, and Czarina Mae
-            Frias Señadan.
-            <br />
-            <br />
-            We are second-year Computer Science students at EARIST (Eulogio
+            We are third-year Computer Science students at EARIST (Eulogio
             &quot;Amang&quot; Rodriguez Institute of Science and Technology)
             currently taking up Computer Science.
             <br />
